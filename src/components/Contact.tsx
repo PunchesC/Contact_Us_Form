@@ -9,6 +9,7 @@ function Contact(){
   const [lastName,setLastName] = useState("");
   const [email,setEmail] = useState("")
   const [message,setMessage] = useState("")
+  
 
   async function handleSubmit(event: { preventDefault: () => void; }){
     event.preventDefault();  
@@ -46,9 +47,14 @@ function Contact(){
     <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
       </label>
      
-      <label> Message
+      <label> Messages
       <textarea value={message} onChange={(e)=> setMessage(e.target.value)}/>
       </label>
+
+      <label>Here be input
+        <input type="file" />
+      </label>
+
       <button type="submit">Submit</button>
      </form>
     </div>
