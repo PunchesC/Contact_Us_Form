@@ -2,7 +2,7 @@ import {initializeApp} from 'firebase/app'
 import {getFirestore } from 'firebase/firestore';
 
 const firebaseApp=initializeApp({
-  apiKey: "testing",
+  apiKey: "AIzaSyCpjcwPPRxT92JcBahpsxmgrFKbiFdPcYw",
   authDomain: "contact-us-form-3378b.firebaseapp.com",
   projectId: "contact-us-form-3378b",
   storageBucket: "contact-us-form-3378b.appspot.com",

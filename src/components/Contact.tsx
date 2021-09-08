@@ -37,23 +37,28 @@ function Contact(){
     <div className="Contact">
       <h1>Contact-Us-Form</h1>
      <form className="App_form"  onSubmit={handleSubmit}>
+      <div>
       <label> First Name
     <input type="text" value={firstName} onChange={(e)=> setFirstName(e.target.value)} />
       </label>
+      </div>
+      <div>
       <label> Last Name 
     <input type="text" value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
       </label>
+      </div>
+      <div>
       <label> Email
-    <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
+    <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
       </label>
-     
+      </div>
+      <div>
       <label> Messages
-      <textarea value={message} onChange={(e)=> setMessage(e.target.value)}/>
+      <textarea value={message} onChange={(e)=> setMessage(e.target.value)} placeholder="Please let us know what we can help with!"/>
       </label>
-
-      <label>Here be input
-        <input type="file" />
-      </label>
+      </div>
+    
+   
 
       <button type="submit">Submit</button>
      </form>

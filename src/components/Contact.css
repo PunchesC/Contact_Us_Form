@@ -1,0 +1,56 @@
+.Contact{
+  font-family: Arial;
+  font-size: 16px;
+ 
+}
+.App_form{
+  background-color: rgba(231, 231, 231);
+  width:50vw;
+  height:60vh;
+  border-radius: 4px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:20px;
+}
+
+.Contact h1{
+  font-size: 38px;
+  font-weight:bold;
+  text-align: center;
+}
+
+
+.Contact input{
+ 
+  height:36px;
+  background-color: #FFFFFF;
+  border-color: #0087AA;
+  color:#4A4A4A;
+
+  
+}
+.Contact label,input{
+  display:flex;
+  flex-direction:column;
+  margin:2.5px;
+  
+}
+.Contact textarea{
+  height:60px
+}
+
+.Contact button{
+  height:36px;
+  background-color: #0087AA;
+  color: #FFFFFF;
+  border: none;
+  border-radius:3.5px;  
+
+}
+
+.Contact button:hover{
+  background-color:#1997B7;
+  color:#4A4A4A;
+  
+}
