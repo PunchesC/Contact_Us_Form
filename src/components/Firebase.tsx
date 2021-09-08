@@ -1,8 +1,10 @@
 import {initializeApp} from 'firebase/app'
 import {getFirestore } from 'firebase/firestore';
+require('dotenv').config()
+
 
 const firebaseApp=initializeApp({
-  apiKey: "test",
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   authDomain: "contact-us-form-3378b.firebaseapp.com",
   projectId: "contact-us-form-3378b",
   storageBucket: "contact-us-form-3378b.appspot.com",
